@@ -1,0 +1,12 @@
+[package]
+name = "probe_ctrl"
+version = "0.1.0"
+edition = "2021"
+description = "Adaptive capture-tier controller driven by background link-goodput probes"
+license = "MIT"
+
+[dependencies]
+tokio = { version = "1", features = ["rt", "sync", "time", "macros"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full", "test-util"] }
